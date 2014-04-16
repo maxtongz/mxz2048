@@ -52,9 +52,9 @@ HTMLActuator.prototype.clearContainer = function (container) {
 };
 
 HTMLActuator.prototype.addTile = function (tile) {
-  var text = " 124816 32 64 128 256 512 1024 2048";
+ // var text = " 124816 32 64 128 256 512 1024 2048";
   var self = this;
-  var text2 = function (n) { var r = 0; while (n > 1) r++, n >>= 1; return r; }
+ // var text2 = function (n) { var r = 0; while (n > 1) r++, n >>= 1; return r; }
 
   var wrapper   = document.createElement("div");
   var inner     = document.createElement("div");
@@ -69,7 +69,8 @@ HTMLActuator.prototype.addTile = function (tile) {
   this.applyClasses(wrapper, classes);
 
   inner.classList.add("tile-inner");
-  inner.textContent = text[text2(tile.value)];
+  inner.textContent = tile.value;
+ // inner.textContent = text[text2(tile.value)];
 
   if (tile.previousPosition) {
     // Make sure that the tile gets rendered in the previous position first
