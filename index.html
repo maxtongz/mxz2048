@@ -1,49 +1,102 @@
+
 <!DOCTYPE html>
 <html>
+<head>
+  <meta charset="utf-8">
+  <title>马小征版2048</title>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Joeguan.github.io : " />
+  <link href="style/main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
 
-    <title>Joeguan.github.io</title>
-  </head>
+  <meta property="og:title" content="2048 game"/>
+  <meta property="og:site_name" content="2048 game"/>
+</head>
+<body>
+  <div class="container">
+<p class="game-explanation">
+    </p>
+    <hr>
+    
+    <div class="heading">
+      <h1 class="title">可人的马小征</h1>
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+    </div>
+    <p class="game-intro">马小征 进化吧！</p>
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+          <a class="retry-button">Try again</a>
+          <div class="score-sharing"></div>
+        </div>
+      </div>
 
-  <body>
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/maxtongz/joeguan.github.io">View on GitHub</a>
+      <div class="tile-container">
 
-          <h1 id="project_title">Joeguan.github.io</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/maxtongz/joeguan.github.io/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/maxtongz/joeguan.github.io/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+      </div>
     </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <p>This is a test page</p>
-      </section>
-    </div>
+ 
+   
+  </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Joeguan.github.io maintained by <a href="https://github.com/maxtongz">maxtongz</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+  <script src="js/animframe_polyfill.js"></script>
+  <script src="js/keyboard_input_manager.js"></script>
+  <script src="js/html_actuator.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/tile.js"></script>
+  <script src="js/local_score_manager.js"></script>
+  <script src="js/game_manager.js"></script>
+  <script src="js/application.js"></script>
 
     
+    <img border="0" src="style/2048.jpg" width="0" height="0">
+    <img border="0" src="style/1024.jpg" width="0" height="0">
+    <img border="0" src="style/512.jpg" width="0" height="0">
+    <img border="0" src="style/256.jpg" width="0" height="0">
+    <img border="0" src="style/128.jpg" width="0" height="0">
+    <img border="0" src="style/64.jpg" width="0" height="0">
+    <img border="0" src="style/32.jpg" width="0" height="0">
+    <img border="0" src="style/test.jpg" width="0" height="0">
+    <img border="0" src="style/8.jpg" width="0" height="0">
+    <img border="0" src="style/4.jpg" width="0" height="0">
+    <img border="0" src="style/2.jpg" width="0" height="0">
 
-  </body>
+</body>
 </html>
